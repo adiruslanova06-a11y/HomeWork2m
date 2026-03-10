@@ -79,3 +79,4 @@ print(f"Ваш выбор: {bot.name}")
 print(f"Ваш противник: {bot.name}"
 
 
+
