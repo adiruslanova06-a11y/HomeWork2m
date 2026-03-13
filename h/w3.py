@@ -1,11 +1,9 @@
 from abc import ABC, abstractmethod
 
-from h.w2 import warrior_obj
 
 
 class Hero(ABC):
-    @abstractmethod
-    def __init__(self, name,level,__health,strengh):
+    def __init__(self, name,level, health,strengh):
         self.name=name
         self.level=level
         self.__health=100
@@ -34,9 +32,9 @@ class Assassin(Hero):
     def attack(self):
         print(self.name,"Ассассин атакует из-под тишка")
 
-Warrior = Warrior("Thor")
-Mage = Mage("Deep")
-Assassin = Assassin("Shadow")
+Warrior = Warrior("Thor", 25, 250, 435)
+Mage = Mage("Deep", 34, 23, 435)
+Assassin = Assassin("Shadow", 25, 23, 235)
 
 
 Warrior.greet()
